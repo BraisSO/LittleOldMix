@@ -32,7 +32,7 @@ public class Pokemon {
 	}
 
 	public Pokemon() {
-		// añadir pokemon random
+		// aÃ±adir pokemon random
 		nuevoPokemon();
 
 	}
@@ -162,7 +162,7 @@ public class Pokemon {
 			ataque1 = "impactrueno";
 			ataque2 = "rayo";
 			ataque3 = "trueno";
-			elemento = "eléctrico";
+			elemento = "elÃ©ctrico";
 		}
 
 	}
