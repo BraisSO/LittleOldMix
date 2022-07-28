@@ -1,4 +1,4 @@
-package pr·cticaExamen;
+package pr√°cticaExamen;
 
 public interface Construcciones {
 	public void construirCasa();
