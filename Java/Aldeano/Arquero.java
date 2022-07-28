@@ -1,4 +1,4 @@
-package pr·cticaExamen;
+package pr√°cticaExamen;
 
 public class Arquero extends Aldeano {
 	
