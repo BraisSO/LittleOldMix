@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-//- Escribir un xogo de adiviñanza. O programa pedirá ao usuario dous números (o número inferior e o número superior).
-//O programa obterá, a continuación, un número aleatorio entre eses dous números, e o usuario deberá adiviñalo.
-//Cada vez que o usuario introduce un número, o programa lle dice si é maior ou menor. Ao final, o programa indica o
-//número de intentos utilizado.
+//- Escribir un xogo de adiviÃ±anza. O programa pedirÃ¡ ao usuario dous nÃºmeros (o nÃºmero inferior e o nÃºmero superior).
+//O programa obterÃ¡, a continuaciÃ³n, un nÃºmero aleatorio entre eses dous nÃºmeros, e o usuario deberÃ¡ adiviÃ±alo.
+//Cada vez que o usuario introduce un nÃºmero, o programa lle dice si Ã© maior ou menor. Ao final, o programa indica o
+//nÃºmero de intentos utilizado.
 
 public class AdivinaNumero {
 
@@ -11,14 +11,14 @@ public class AdivinaNumero {
 		Scanner escaner = new Scanner(System.in);
 		System.out.println("Introduce el maximo:");
 		int introducir = escaner.nextInt();
-		System.out.println("Introduce el mínimo:");
+		System.out.println("Introduce el mÃ­nimo:");
 		int introducir2 = escaner.nextInt();
 
 		while (introducir<introducir2) {
 			System.out.println("Introduce bien los rangos:");
 			System.out.println("Introduce el maximo:");
 			introducir = escaner.nextInt();
-			System.out.println("Introduce el mínimo:");
+			System.out.println("Introduce el mÃ­nimo:");
 			introducir2 = escaner.nextInt();
 		}
 		
@@ -47,7 +47,7 @@ public class AdivinaNumero {
 			
 			else if (introducir3 == aleatorio) {
 				System.out.println("Has acertado");
-				System.out.println("Nº intentos:" + intentos);
+				System.out.println("NÂº intentos:" + intentos);
 			}
 		}
 	}
