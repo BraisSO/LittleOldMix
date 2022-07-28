@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            x = prompt("Introduzca DNI")
+            code = /^[0-9]{8}$/gi
+            code2 = /^[0-9]{8}[a-z]$/gi
+
+            dni = ["t", "r", "w", "a", "g", "m", "y", "f",
+                "p", "d", "x", "b",
+                "n", "j", "z", "s", "q", "v", "h", "l", "c", "k", "e"]
+
+            y = parseInt(x) % 23
+            y = dni[y]
+
+            testeo = code.test(x)
+            testeo2 = code2.test(x)
+
+            if (testeo == true) {
+                alert("La letra del DNI es" + " " + y.toUpperCase())
+
+                break
+            }
+
+            if (testeo2 == true && x[8] == y) {
+                alert("Correcto")
+                break
+            }
+
+            else {
+                alert("DNI incorrecto")
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

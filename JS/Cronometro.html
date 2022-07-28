@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <span id="c"></span>
+    <span id="b"></span>
+    <span id="a"></span>
+    
+    <button onclick="buno()"> Iniciar </button>
+    <button onclick="budos()"> Parar </button>
+    <button onclick="butres()"> Reiniciar </button>
+
+        
+    
+    <script>
+        milisec=0
+        minute=0
+        hour=0
+
+        function buno(){
+         crono=setInterval(alerta, 1000);}
+
+        function budos(){
+         crono=clearInterval(crono);
+            }
+
+        function butres(){
+            if(milisec>1||minute>1||hour>1){
+                    milisec=0
+                    minute=0
+                    hour=0
+
+            }
+            }
+
+        function alerta(){
+           milisec=milisec+1
+            document.getElementById("a").innerHTML=milisec
+        
+        if(milisec==59){
+            milisec=0
+            minute=minute+1
+            document.getElementById("b").innerHTML=minute
+        }
+
+        if(minute==59){
+            minute=0
+            hour=hour+1
+            document.getElementById("c").innerHTML=hour
+            
+        } 
+           
+        
+    }
+        
+       
+
+    </script>
+</body>
+</html>
