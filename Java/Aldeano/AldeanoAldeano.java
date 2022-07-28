@@ -1,4 +1,4 @@
-package pr·cticaExamen;
+package pr√°cticaExamen;
 
 import java.util.Arrays;
 
@@ -50,7 +50,7 @@ public abstract class Aldeano {
 	}
 
 	/**
-	 * MÈtodos toString e equals que logo ser·n sobreescritos * @return
+	 * M√©todos toString e equals que logo ser√°n sobreescritos * @return
 	 */
 
 	@Override
