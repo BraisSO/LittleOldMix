@@ -1,26 +1,26 @@
-package prácticaExamen;
+package prÃ¡cticaExamen;
 
 import java.util.Arrays;
 
 public class AldeanoBase extends Aldeano implements Construcciones,Comparable<AldeanoBase> {
 	
-	private int maña;
+	private int maÃ±a;
 	private int edad;
 	private Aldeano [] arrayAldeanoBase;
 	
 
-	public AldeanoBase(String nombre, int vida, int ataque, byte nivel, int maña, int edad) {
+	public AldeanoBase(String nombre, int vida, int ataque, byte nivel, int maÃ±a, int edad) {
 		super(nombre, vida, ataque, nivel);
-		this.maña = maña;
+		this.maÃ±a = maÃ±a;
 		this.edad = edad;
 	}
 
-	public int getMaña() {
-		return maña;
+	public int getMaÃ±a() {
+		return maÃ±a;
 	}
 
-	public void setMaña(int maña) {
-		this.maña = maña;
+	public void setMaÃ±a(int maÃ±a) {
+		this.maÃ±a = maÃ±a;
 	}
 
 	public int getEdad() {
@@ -70,7 +70,7 @@ public class AldeanoBase extends Aldeano implements Construcciones,Comparable<Al
 	@Override
 	public String toString() {
 	
-		return super.toString() + "Maña: " + this.maña + "Edad: " + this.edad;
+		return super.toString() + "MaÃ±a: " + this.maÃ±a + "Edad: " + this.edad;
 	}
 	
 	@Override
@@ -85,10 +85,10 @@ public class AldeanoBase extends Aldeano implements Construcciones,Comparable<Al
 	}
 	
 	/**
-	 * Funcion para ordenar AldeanosBase pero está un poco errada, ya que en statico no deja usarla y para
+	 * Funcion para ordenar AldeanosBase pero estÃ¡ un poco errada, ya que en statico no deja usarla y para
 	 * que funcione debe pasarsele un arraydeAldeanosBase {@link AldeanoBase} lo que no tiene mucho sentido.
 	 * 
-	 * Podría considerarse la inclusión de un parámetro familia.
+	 * PodrÃ­a considerarse la inclusiÃ³n de un parÃ¡metro familia.
 	 * 
 	 * @see Comparable
 	 * @see #compareTo(AldeanoBase)
