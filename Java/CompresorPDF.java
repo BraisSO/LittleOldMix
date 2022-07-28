@@ -15,14 +15,14 @@ public class CompresorPDF extends JFrame {
 		Container ventana = getContentPane();
 		ventana.setLayout(new GridBagLayout());
 
-		// Boton AÑADIR
-		GridBagConstraints constraintsBotAñadir = new GridBagConstraints();
-		constraintsBotAñadir.gridx = 0;
-		constraintsBotAñadir.gridy = 0;
+		// Boton AÃ‘ADIR
+		GridBagConstraints constraintsBotAÃ±adir = new GridBagConstraints();
+		constraintsBotAÃ±adir.gridx = 0;
+		constraintsBotAÃ±adir.gridy = 0;
 
-		JButton botAñadir = new JButton("Añadir");
+		JButton botAÃ±adir = new JButton("AÃ±adir");
 
-		ActionListener pulsarAñadir = new ActionListener() {
+		ActionListener pulsarAÃ±adir = new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -148,14 +148,14 @@ public class CompresorPDF extends JFrame {
 			}
 		};
 
-		// Añadir al PANE - Acciones
-		botAñadir.addActionListener(pulsarAñadir);
+		// AÃ±adir al PANE - Acciones
+		botAÃ±adir.addActionListener(pulsarAÃ±adir);
 		botExit.addActionListener(cerrar);
 		slider.addChangeListener(eventSlider);
 		
 
-		// Añadir al PANE - Componentes
-		ventana.add(botAñadir, constraintsBotAñadir);
+		// AÃ±adir al PANE - Componentes
+		ventana.add(botAÃ±adir, constraintsBotAÃ±adir);
 		ventana.add(botEliminar, constraintsBotEliminar);
 		ventana.add(botHelp, constraintsBotHelp);
 		ventana.add(botExit, constraintsBotExit);
