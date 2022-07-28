@@ -1,4 +1,4 @@
-package pr·cticaExamen;
+package pr√°cticaExamen;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
